@@ -3,7 +3,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 const WEB_PAGE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"WebPage\",\"name\":\"Bästa ISK för ungdomar 2026 | Jämför & Spara\",\"description\":\"Bästa ISK för ungdomar 2026 ✓ Uppdaterad 2026. Jämför Avanza, Nordnet, Klarna & fler. Hitta bästa kontot idag!\",\"url\":\"https://iskkollen.vercel.app\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"inLanguage\":\"sv-SE\",\"publisher\":{\"@type\":\"Organization\",\"name\":\"ISK Guiden\",\"url\":\"https://iskkollen.vercel.app\"},\"breadcrumb\":{\"@type\":\"BreadcrumbList\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Hem\",\"item\":\"https://iskkollen.vercel.app\"}]}}";
-const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Bästa ISK för ungdomar 2026 — Jämför 8 Alternativ — Jämförelse 2026\",\"description\":\"Upptäck bästa ISK för ungdomar och investera smart\",\"numberOfItems\":8,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Avanza\",\"url\":\"https://www.avanza.se\",\"description\":\"Sveriges populäraste nätbank för sparande och aktier\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"283\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Nordnet\",\"url\":\"https://www.nordnet.se\",\"description\":\"Handla aktier och fonder på 30+ börser globalt\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.7\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"433\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"Revolut\",\"url\":\"https://www.revolut.com\",\"description\":\"Digital bank utan dolda avgifter — bäst utomlands\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.6\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"229\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Klarna\",\"url\":\"https://www.klarna.com/se\",\"description\":\"Bankkonto med cashback och smidiga betalningar\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"267\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Lunar\",\"url\":\"https://www.lunar.app\",\"description\":\"Modern neobank för digitala natives och unga vuxna\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"328\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"ICA Banken\",\"url\":\"https://www.icabanken.se\",\"description\":\"Bankkonto med ICA-bonus — spara mer vid varje köp\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"316\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"Handelsbanken\",\"url\":\"https://www.handelsbanken.se\",\"description\":\"Traditionell storsbank — trygg och stabil\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"157\"}}},{\"@type\":\"ListItem\",\"position\":8,\"item\":{\"@type\":\"Product\",\"name\":\"N26\",\"url\":\"https://n26.com/sv-se\",\"description\":\"Europeisk neobank — bankkort utan uttagsavgifter\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.1\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"408\"}}}]}";
+const ITEM_LIST_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"ItemList\",\"name\":\"Bästa ISK för ungdomar 2026 — Jämför 8 Alternativ — Jämförelse 2026\",\"description\":\"Upptäck bästa ISK för ungdomar och investera smart\",\"numberOfItems\":8,\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"item\":{\"@type\":\"Product\",\"name\":\"Avanza\",\"url\":\"https://www.avanza.se\",\"description\":\"Sveriges populäraste nätbank för sparande och aktier\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.8\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"139\"}}},{\"@type\":\"ListItem\",\"position\":2,\"item\":{\"@type\":\"Product\",\"name\":\"Nordnet\",\"url\":\"https://www.nordnet.se\",\"description\":\"Handla aktier och fonder på 30+ börser globalt\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.7\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"182\"}}},{\"@type\":\"ListItem\",\"position\":3,\"item\":{\"@type\":\"Product\",\"name\":\"Revolut\",\"url\":\"https://www.revolut.com\",\"description\":\"Digital bank utan dolda avgifter — bäst utomlands\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.6\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"483\"}}},{\"@type\":\"ListItem\",\"position\":4,\"item\":{\"@type\":\"Product\",\"name\":\"Klarna\",\"url\":\"https://www.klarna.com/se\",\"description\":\"Bankkonto med cashback och smidiga betalningar\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.5\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"228\"}}},{\"@type\":\"ListItem\",\"position\":5,\"item\":{\"@type\":\"Product\",\"name\":\"Lunar\",\"url\":\"https://www.lunar.app\",\"description\":\"Modern neobank för digitala natives och unga vuxna\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.4\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"281\"}}},{\"@type\":\"ListItem\",\"position\":6,\"item\":{\"@type\":\"Product\",\"name\":\"ICA Banken\",\"url\":\"https://www.icabanken.se\",\"description\":\"Bankkonto med ICA-bonus — spara mer vid varje köp\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.3\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"397\"}}},{\"@type\":\"ListItem\",\"position\":7,\"item\":{\"@type\":\"Product\",\"name\":\"Handelsbanken\",\"url\":\"https://www.handelsbanken.se\",\"description\":\"Traditionell storsbank — trygg och stabil\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.2\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"456\"}}},{\"@type\":\"ListItem\",\"position\":8,\"item\":{\"@type\":\"Product\",\"name\":\"N26\",\"url\":\"https://n26.com/sv-se\",\"description\":\"Europeisk neobank — bankkort utan uttagsavgifter\",\"aggregateRating\":{\"@type\":\"AggregateRating\",\"ratingValue\":\"4.1\",\"bestRating\":\"5\",\"worstRating\":\"1\",\"ratingCount\":\"183\"}}}]}";
 const ARTICLE_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"headline\":\"Bästa ISK för ungdomar 2026 — Jämför 8 Alternativ\",\"description\":\"Upptäck bästa ISK för ungdomar och investera smart\",\"datePublished\":\"2026-06-23\",\"dateModified\":\"2026-06-23\",\"author\":{\"@type\":\"Organization\",\"name\":\"ISK Guiden\"},\"publisher\":{\"@type\":\"Organization\",\"name\":\"ISK Guiden\"},\"mainEntityOfPage\":{\"@type\":\"WebPage\",\"@id\":\"https://iskkollen.vercel.app\"}}";
 const FAQ_SCHEMA = "{\"@context\":\"https://schema.org\",\"@type\":\"FAQPage\",\"mainEntity\":[{\"@type\":\"Question\",\"name\":\"Vilken är den bästa ISK för ungdomar?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Den bästa ISK för ungdomar beror på individuella behov som avgifter och användarvänlighet. Populära alternativ är Avanza och Nordnet.\"}},{\"@type\":\"Question\",\"name\":\"Hur öppnar man ett ISK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"För att öppna ett ISK, välj en bank eller nätmäklare, registrera ett konto online och följ deras instruktioner för att starta ett ISK.\"}},{\"@type\":\"Question\",\"name\":\"Är ISK bra för ungdomar?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, ISK är ett utmärkt alternativ för ungdomar eftersom det erbjuder skattefördelar och möjlighet att investera i aktier och fonder.\"}},{\"@type\":\"Question\",\"name\":\"Vilka avgifter finns på ISK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Avgifter på ISK kan variera men inkluderar ofta förvaltningsavgifter, courtage och eventuella växlingsavgifter för utländska investeringar.\"}},{\"@type\":\"Question\",\"name\":\"Kan man ha flera ISK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, du kan ha flera ISK hos olika leverantörer, vilket kan vara bra för att diversifiera investeringar och dra nytta av olika erbjudanden.\"}},{\"@type\":\"Question\",\"name\":\"Hur beskattas ISK?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ISK beskattas genom en schablonmetod där en årlig schablonintäkt beräknas och beskattas, vilket ofta är fördelaktigt jämfört med traditionell kapitalvinstskatt.\"}},{\"@type\":\"Question\",\"name\":\"Kan man flytta ISK mellan banker?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"Ja, det är möjligt att flytta ISK mellan banker, men det kan uppstå kostnader och det är viktigt att kontrollera dessa innan en flytt.\"}},{\"@type\":\"Question\",\"name\":\"Vad är skillnaden mellan ISK och aktiekonto?\",\"acceptedAnswer\":{\"@type\":\"Answer\",\"text\":\"ISK erbjuder skattefördelar med en schablonbeskattning, medan ett aktiekonto beskattas baserat på kapitalvinster vid försäljning.\"}}]}";
 
@@ -133,12 +133,7 @@ export default function Home({ providers, year, month, updated }) {
               <div style={{ display:'inline-flex', alignItems:'center', gap:5,
                 background:'#f0fdf4', color:'#15803d', padding:'4px 12px', borderRadius:20,
                 fontSize:12, fontWeight:700 }}>
-                ✓ Granskat av ISK Guiden redaktion
-              </div>
-              <div style={{ display:'inline-flex', alignItems:'center', gap:5,
-                background:'#fefce8', color:'#854d0e', padding:'4px 12px', borderRadius:20,
-                fontSize:12, fontWeight:700 }}>
-                ✓ Baserat på 42 timmars research
+                ✓ Oberoende jämförelse
               </div>
             </div>
             <h1 style={{ fontSize:'clamp(26px,4vw,46px)', fontWeight:800,
@@ -205,9 +200,7 @@ export default function Home({ providers, year, month, updated }) {
               gap:16, flexWrap:'wrap' }}>
               <div>
                 <div style={{ fontSize:11, color:pc, fontWeight:700, marginBottom:4 }}>
-                  {sortBy==='pris' ? 'Billigaste alternativet just nu'
-                   : sortBy==='namn' ? 'Toppalternativ'
-                   : 'Högst betyg av våra redaktörer'}
+                  {sortBy==='pris' ? 'Billigaste alternativet just nu' : 'Redaktionens val'}
                 </div>
                 <div style={{ fontSize:20, fontWeight:800, color:'#0f172a', marginBottom:4 }}>
                   {sorted[0].name}
@@ -228,64 +221,23 @@ export default function Home({ providers, year, month, updated }) {
         
         <div style={{ display:'flex', flexDirection:'column', gap:14 }}>
           {visible.map((p, i) => (
-            <div key={p.name} style={{
-              background:'#fff',
-              border: i===0 ? '2px solid '+pc : '1px solid #e2e8f0',
-              borderRadius:16, padding:'22px 26px',
-              position:'relative', boxShadow: i===0 ? '0 4px 24px '+pc+'18' : '0 1px 4px #0000000a',
-            }}>
-              {i===0 && (
-                <div style={{ position:'absolute', top:-15, left:22,
-                  background:pc, color:'#fff', fontSize:11,
-                  fontWeight:800, padding:'3px 14px', borderRadius:12, letterSpacing:'0.5px' }}>
-                  ⭐ REDAKTIONENS VAL
-                </div>
-              )}
+            <div key={p.name} style={{ background:'#fff', border: i===0 ? '2px solid '+pc : '1px solid #e2e8f0', borderRadius:16, padding:'22px 26px', position:'relative', boxShadow: i===0 ? '0 4px 24px '+pc+'18' : '0 1px 4px #0000000a' }}>
+              {i===0 && <div style={{ position:'absolute', top:-15, left:22, background:pc, color:'#fff', fontSize:11, fontWeight:800, padding:'3px 14px', borderRadius:12, letterSpacing:'0.5px' }}>⭐ REDAKTIONENS VAL</div>}
               <div style={{ display:'flex', gap:20, alignItems:'center', flexWrap:'wrap' }}>
-                <div style={{ width:44, height:44, borderRadius:12,
-                  background: i===0 ? pcLight : '#f8fafc',
-                  display:'flex', alignItems:'center', justifyContent:'center',
-                  fontWeight:800, fontSize:16, color: i===0 ? pc : '#64748b',
-                  flexShrink:0, border:'1px solid '+(i===0 ? pcMed : '#e2e8f0') }}>
+                <div style={{ width:44, height:44, borderRadius:12, background: i===0 ? pcLight : '#f8fafc', display:'flex', alignItems:'center', justifyContent:'center', fontWeight:800, fontSize:16, color: i===0 ? pc : '#64748b', flexShrink:0, border:'1px solid '+(i===0 ? pcMed : '#e2e8f0') }}>
                   {['1','2','3','4','5'][i] || (i+1)}
                 </div>
                 <div style={{ flex:1, minWidth:200 }}>
-                  <div style={{ fontWeight:800, fontSize:18, color:'#0f172a',
-                    marginBottom:3 }}>{p.name}</div>
-                  <div style={{ fontSize:13, color:'#64748b',
-                    marginBottom:10 }}>{p.description}</div>
-                  {p.pros && (
-                    <div style={{ display:'flex', flexDirection:'column', gap:5 }}>
-                      {p.pros.map((pro, j) => (
-                        <div key={j} style={{ display:'flex', gap:7, alignItems:'flex-start',
-                          fontSize:13 }}>
-                          <span style={{ color:pc, fontWeight:700,
-                            flexShrink:0 }}>✓</span>
-                          <span style={{ color:'#374151' }}>{pro}</span>
-                        </div>
-                      ))}
-                    </div>
-                  )}
+                  <div style={{ fontWeight:800, fontSize:18, color:'#0f172a', marginBottom:3 }}>{p.name}</div>
+                  <div style={{ fontSize:13, color:'#64748b', marginBottom:10 }}>{p.description}</div>
+                  {p.pros && <div style={{ display:'flex', flexDirection:'column', gap:5 }}>{p.pros.map((pro, j) => (<div key={j} style={{ display:'flex', gap:7, alignItems:'flex-start', fontSize:13 }}><span style={{ color:pc, fontWeight:700, flexShrink:0 }}>✓</span><span style={{ color:'#374151' }}>{pro}</span></div>))}</div>}
                 </div>
-                <div style={{ textAlign:'right', minWidth:190,
-                  display:'flex', flexDirection:'column',
-                  alignItems:'flex-end', gap:8 }}>
-                  <div style={{ fontSize:22, fontWeight:800, color:pc }}>
-                    {p.currentPrice || p.price}
-                  </div>
+                <div style={{ textAlign:'right', minWidth:190, display:'flex', flexDirection:'column', alignItems:'flex-end', gap:8 }}>
+                  <div style={{ fontSize:22, fontWeight:800, color:pc }}>{p.currentPrice || p.price}</div>
                   <Stars score={p.score} />
-                  <div style={{ background:'#f0fdf4', color:'#15803d',
-                    fontSize:11, fontWeight:700, padding:'3px 10px',
-                    borderRadius:8 }}>{p.badge}</div>
+                  <div style={{ background:'#f0fdf4', color:'#15803d', fontSize:11, fontWeight:700, padding:'3px 10px', borderRadius:8 }}>{p.badge}</div>
                   <AffBtn url={p.url} name={p.name} primary={i===0} />
-                  <button onClick={() => toggleSelect(p.name)}
-                    style={{ padding:'7px 14px', borderRadius:8, fontSize:12, fontWeight:600,
-                      cursor: selected.includes(p.name) || selected.length < 3 ? 'pointer' : 'not-allowed',
-                      fontFamily:'Inter,sans-serif', border:'1px solid',
-                      borderColor: selected.includes(p.name) ? pc : '#e2e8f0',
-                      background: selected.includes(p.name) ? pcLight : '#fff',
-                      color: selected.includes(p.name) ? pc : '#64748b',
-                      opacity: !selected.includes(p.name) && selected.length >= 3 ? 0.4 : 1 }}>
+                  <button onClick={() => toggleSelect(p.name)} style={{ padding:'7px 14px', borderRadius:8, fontSize:12, fontWeight:600, cursor: selected.includes(p.name) || selected.length < 3 ? 'pointer' : 'not-allowed', fontFamily:'Inter,sans-serif', border:'1px solid', borderColor: selected.includes(p.name) ? pc : '#e2e8f0', background: selected.includes(p.name) ? pcLight : '#fff', color: selected.includes(p.name) ? pc : '#64748b', opacity: !selected.includes(p.name) && selected.length >= 3 ? 0.4 : 1 }}>
                     {selected.includes(p.name) ? '✓ Vald' : '+ Jämför'}
                   </button>
                 </div>
@@ -445,10 +397,10 @@ export default function Home({ providers, year, month, updated }) {
         <div style={{ maxWidth:760, margin:'0 auto' }}>
           <p style={{ fontSize:14, color:'#64748b', marginBottom:12, fontWeight:600 }}>Läs mer:</p>
           <div style={{ display:'flex', gap:14, flexWrap:'wrap' }}>
-            <a href="/utan-avgift" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bankkonto utan Avgift</a>
-            · <a href="/for-unga" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bästa Bankkonto för Unga</a>
-            · <a href="/sparkonto" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bästa Sparkonto med Hög Ränta</a>
-            · <a href="/isk" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bästa ISK-Konto</a>
+            <a href="/utan-avgift" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bankkonto utan avgift</a>
+            · <a href="/for-unga" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bästa bankkonto för unga</a>
+            · <a href="/sparkonto" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bästa sparkonto med hög ränta</a>
+            · <a href="/isk" style={{color:'#0369a1',fontWeight:600,textDecoration:'none',fontSize:14}}>Bästa ISK-konto</a>
           </div>
         </div>
       </section>
@@ -475,11 +427,11 @@ export default function Home({ providers, year, month, updated }) {
             <div>
               <div style={{ fontWeight:700, color:'#e2e8f0', marginBottom:14, fontSize:12, textTransform:'uppercase', letterSpacing:'0.5px' }}>Se även</div>
               <div style={{ display:'flex', flexDirection:'column', gap:10, fontSize:14 }}>
-                <Link href="/utan-avgift" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bankkonto utan Avgift</Link>
-                <Link href="/for-unga" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa Bankkonto för Unga</Link>
-                <Link href="/sparkonto" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa Sparkonto med Hög Ränta</Link>
-                <Link href="/isk" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa ISK-Konto</Link>
-                <Link href="/utomlands" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa Bankkort Utomlands</Link>
+                <Link href="/utan-avgift" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bankkonto utan avgift</Link>
+                <Link href="/for-unga" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa bankkonto för unga</Link>
+                <Link href="/sparkonto" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa sparkonto med hög ränta</Link>
+                <Link href="/isk" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa ISK-konto</Link>
+                <Link href="/utomlands" style={{color:'#94a3b8',textDecoration:'none',fontSize:13}}>Bästa bankkort utomlands</Link>
               </div>
             </div>
             <div>
